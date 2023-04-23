@@ -1,0 +1,16 @@
+{
+  "name": "desktop_app",
+  "productName": "desktop_app",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "michaelalbert",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "20.1.4"
+  }
+}
