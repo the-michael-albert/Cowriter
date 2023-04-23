@@ -93,8 +93,8 @@ const loginModal = new Element({
     style: `
     font-size: max(2em, 22px);
     width: max(20vw, 350px);
-    height: max(40vh, 600px);
-    margin-top: calc(calc(100vh - max(40vh, 600px)) / 2);
+    height: max(40vh, 400px);
+    margin-top: calc(calc(100vh - max(40vh, 400px)) / 2);
     margin-left: calc(calc(100vw - max(20vw, 350px)) / 2);
     border: solid;
     border-radius: 8px;
