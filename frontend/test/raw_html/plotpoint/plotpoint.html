@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+    <link href='plotpoint_style.css' rel='stylesheet'>
+    <style>
+    body {
+        font-family: OpenSans, Arial, Helvetica, sans-serif;
+    }
+    </style>
+    <title>Plot Point</title>
+</head>
+<body>
+    <div id="container">
+    </div>
+    <script src="plotpoint_elems.js"></script>
+    <script src="plotpoint_render.js"></script>
+    <script src="plotpoint_listen.js"></script>
+</body>
+</html>
