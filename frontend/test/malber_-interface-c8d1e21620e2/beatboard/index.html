@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Beat Board</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/smoothness/jquery-ui.css">
+  <link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      font-family: 'Questrial';
+    }
+  </style>
+</head>
+<body>
+
+  <div id="ribbon">
+    <button id="add-beat">Add Beat</button>
+    <button id="export-button">Export Beat Board</button>
+    <button id="import-button">Import Beat Board</button>
+    <button onclick="captureDivAsPDF()">Capture as PDF</button>
+  </div>
+
+  <div id="beat-board-container">
+    <div id="beat-board">
+      <div class="beat" data-x="0" data-y="0">
+        <div class="drag-handle"></div>
+        <h2>Beat 1</h2>
+        <p>Drag me to rearrange!</p>
+      </div>
+      <div class="beat" data-x="100" data-y="100">
+        <div class="drag-handle"></div>
+        <h2>Beat 2</h2>
+        <p>Drag me to rearrange!</p>
+      </div>
+      <div class="beat" data-x="200" data-y="200">
+        <div class="drag-handle"></div>
+        <h2>Beat 3</h2>
+        <p>Drag me to rearrange!</p>
+      </div>
+    </div>
+
+  </div>
+  
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+
+
+  <script src="script.js"></script>
+  <script src="pdf_export.js"></script>
+
+
+</body>
+</html>

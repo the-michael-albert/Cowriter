@@ -1,0 +1,50 @@
+body{
+    padding: 0px;
+    margin: 0px;;
+  }
+
+  #beat-board-container {
+    width: calc(100vw - 8px);
+    height: 90vh;
+    border: 4px solid rgba(255, 0, 0, .5);
+    overflow-x: scroll;
+    overflow-y: scroll; 
+    white-space: nowrap;
+  }
+
+  #beat-board {
+    border: 4px solid #0002;
+    padding: 0px;
+    margin: 0px;
+    background-size: 40px 40px;
+    background-image:
+      linear-gradient(to right, #0001 1px, transparent 1px),
+      linear-gradient(to bottom, #0001 1px, transparent 1px);
+    position: relative;
+      
+
+    width: 4400px;
+    height: 3400px;
+  }
+
+  .beat {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    background-color: #f0f0f0;
+    border: 2px solid #999;
+    padding: 10px;
+  }
+
+
+
+  .drag-handle {
+    width: 100%;
+    height: 12px;
+    background-color: #0001;
+    cursor: move;
+    background-image: url("drag_context.svg");
+    background-repeat: no-repeat;
+    background-position: center; 
+  }

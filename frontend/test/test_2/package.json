@@ -1,0 +1,16 @@
+{
+  "name": "irritating-library-service-hlm8q",
+  "productName": "irritating-library-service-hlm8q",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "Micha",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "20.1.4"
+  }
+}
