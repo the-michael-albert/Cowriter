@@ -1,6 +1,11 @@
 /**
  * +++ BUILDING BLOCK +++
  */
+
+const theme = {
+    roundedness: 6
+}
+
 const Element = class {
     constructor(props){
      this.children = props.children;
@@ -35,7 +40,7 @@ const textBox = class {
         this.text = placeholder;
         this.id = id;
         this.style = `
-        border-radius: 10px;
+        border-radius: ` + theme.roundedness + `px;
         width: calc(100% - 40px);
         text-align: left;
         padding: 10px;
@@ -49,8 +54,6 @@ const textBox = class {
     }
     
       render(){
-
-
         let opener = `<div id="label-` + this.id + `" style="` + `
         font-size:12px;
         width: 100%;
@@ -73,10 +76,19 @@ const button = class {
     constructor(id, placeholder){
         this.text = placeholder;
         this.id = id;
+        this.style = [
+            `
+            width:100%;
+            text-align:center;
+            `,
+            `
+            border-radius: ` + theme.roundedness + `px;
+            `
+        ];
     }
     
     render(){
-        const opener = `<div id="button-container" style="width:100%;text-align:center;"><div id="` + this.id + `" class="button">`;
+        const opener = `<div id="button-container" style="` + this.style[0] +`"><div id="` + this.id + `" style="` + this.style +` class="button">`;
         let middle = this.text;
         const closer = `</div></div>`;
         return opener + middle + closer;
@@ -97,7 +109,7 @@ const loginModal = new Element({
     margin-top: calc(calc(100vh - max(40vh, 400px)) / 2);
     margin-left: calc(calc(100vw - max(20vw, 350px)) / 2);
     border: solid;
-    border-radius: 12px;
+    border-radius: ` + theme.roundedness + `px;
     background-color: white;
     `,
     children: [
